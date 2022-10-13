@@ -1,0 +1,4 @@
+#pragma once
+#include "pch.h"
+
+constexpr DWORD WS_EX_CHILDWINDOW = WS_CHILD | WS_VISIBLE | WS_CLIPCHILDREN | WS_CLIPSIBLINGS ; 

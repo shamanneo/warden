@@ -16,7 +16,7 @@ LRESULT CView::OnPaint(UINT uMsg, WPARAM wParam, LPARAM lParam, BOOL &bHandled)
 {
     PAINTSTRUCT ps ;
     HDC hDC = BeginPaint(&ps) ; 
-    Draw(hDC) ; 
+    Draw(hDC) ; // Drawing current view.
     EndPaint(&ps) ; 
     return 0 ; 
 }
