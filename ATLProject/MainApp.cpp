@@ -24,7 +24,8 @@ int CMainApp::Run(HINSTANCE hInstance, int nCmdShow)
         rc, 
         _T("Warden"), 
         WS_OVERLAPPEDWINDOW,
-        NULL
+        NULL,
+        IDR_MAIN_MENU
     ) ; 
     m_MainFrame.ShowWindow(nCmdShow) ; 
     m_MainFrame.CenterWindow() ; 
