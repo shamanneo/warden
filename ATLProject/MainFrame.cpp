@@ -5,7 +5,7 @@
 
 CMainFrame::CMainFrame()
 {
-
+    
 }
 
 CMainFrame::~CMainFrame()

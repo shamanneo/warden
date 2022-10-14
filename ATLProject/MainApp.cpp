@@ -6,12 +6,12 @@ static CMainApp *g_pMainApp = nullptr ;
 
 CMainApp::CMainApp()
 {
-
+    m_hMenu = LoadMenu(_AtlBaseModule.GetModuleInstance(), MAKEINTRESOURCE(IDR_MAIN_MENU)) ; 
 }
 
 CMainApp::~CMainApp()
 {
-
+    DestroyMenu(m_hMenu) ; 
 }
 
 int CMainApp::Run(HINSTANCE hInstance, int nCmdShow)
@@ -25,7 +25,7 @@ int CMainApp::Run(HINSTANCE hInstance, int nCmdShow)
         _T("Warden"), 
         WS_OVERLAPPEDWINDOW,
         NULL,
-        IDR_MAIN_MENU
+        m_hMenu
     ) ; 
     m_MainFrame.ShowWindow(nCmdShow) ; 
     m_MainFrame.CenterWindow() ; 
